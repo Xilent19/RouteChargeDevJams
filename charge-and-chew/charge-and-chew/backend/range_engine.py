@@ -168,14 +168,3 @@ def check_charger_reachability(
         "min_soc_buffer_percent": min_soc_buffer_percent,
         "reachable": arrival_soc >= min_soc_buffer_percent,
     }
-
-
-if __name__ == "__main__":
-    vehicle = VehicleProfile(
-        model="Typical EV",
-        battery_kwh=60,
-        consumption_kwh_per_km=0.1667,
-    )
-
-    print(check_charger_reachability(vehicle, 80, 228, 15))
-    print(check_charger_reachability(vehicle, 80, 241, 15))
