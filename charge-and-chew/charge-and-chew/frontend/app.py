@@ -2,10 +2,19 @@
 Charge & Chew — Streamlit entry point.
 Owned by: UI & Map Designer (Member 2)
 """
+import os
+import sys
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 import streamlit as st
 from dotenv import load_dotenv
+from streamlit_folium import st_folium
 
-from backend.trip_planner import plan_trip, VEHICLE_PROFILES
+from backend import plan_trip, VEHICLE_PROFILES
+from frontend.map_view import build_trip_map
 
 load_dotenv()
 
