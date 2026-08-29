@@ -115,9 +115,10 @@ streamlit run frontend/app.py
 ## 👥 Team
 
 | Role | Owner | Scope |
-|---|---|---|
-| **Data & Routing (Backend)** | *Member 1* | Geocoding, OSRM routing, OpenChargeMap querying, Gemini dining recommendations |
-| **UI & Map Design (Frontend)** | *Member 2* | Streamlit UI, Folium map rendering, layout, dining/metric cards |
+| :--- | :--- | :--- |
+| **Data & Routing (Backend)** | Member 1 | Geocoding, OSRM routing, OpenChargeMap querying, Gemini dining recommendations |
+| **UI & Map Design (Frontend)** | Member 2 | Streamlit UI, Folium map rendering, layout, dining/metric cards |
+| **API & Services (Backend)** | Member 3 | `Fetch route coordinates, locate charging stations` |
 
 See [`docs/data_contract.md`](docs/data_contract.md) for how the two halves connect.
 
