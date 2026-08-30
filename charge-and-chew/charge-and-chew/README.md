@@ -1,4 +1,4 @@
-# ⚡🍽️ RouteCharge
+# ⚡🍽️ Charge & Chew
 
 **Turn mandatory EV charging stops into memorable food stops.**
 
